@@ -3,82 +3,82 @@ from App import app
 def index():
     return '<h1>Início</h1>'
 
-@app.route('/home')
+@app.route('/home', methods=['POST'])
 def home():
     return '<h1>Angelim</h1>'
 
-@app.route('/login_medico')
+@app.route('/login_medico', methods=['POST'])
 def login_medico():
     return '<h1>Autenticação</h1>'
 
-@app.route('/login_paciente')
+@app.route('/login_paciente', methods=['POST'])
 def login_paciente():
     return '<h1>Autenticação</h1>'
 
-@app.route('/cadastro')
+@app.route('/cadastro', methods=['POST'])
 def cadastro():
     return '<h1>Cadastro</h1>'
 
-@app.route('/cadastro_medico')
+@app.route('/cadastro_medico', methods=['POST'])
 def cadastro_medico():
     return '<h1>Cadastro</h1>'
 
-@app.route('/cadastro_paciente')
+@app.route('/cadastro_paciente', methods=['POST'])
 def cadastro_paciente():
     return '<h1>Cadastro</h1>'
 
-@app.route('/pagamento_paciente')
+@app.route('/pagamento_paciente', methods=['POST'])
 def pagamento_paciente():
     return '<h1>Pagamento</h1>'
 
-@app.route('/pagamento_medico')
+@app.route('/pagamento_medico', methods=['POST'])
 def pagamento_medico():
     return '<h1>Pagamento</h1>'
 
-@app.route('/agenda_medico')
+@app.route('/agenda_medico', methods=['POST'])
 def agenda_medico():
     return '<h1>Agenda</h1>'
 
-@app.route('/agenda_paciente')
+@app.route('/agenda_paciente', methods=['POST'])
 def agenda_paciente():
     return '<h1>Agenda</h1>'
 
-@app.route('/historico')
+@app.route('/historico', methods=['POST'])
 def historico():
     return '<h1>Histórico</h1>'
 
-@app.route('/anotacoes')
+@app.route('/anotacoes', methods=['POST'])
 def anotacoes():
     return '<h1>Anotações</h1>'
 
-@app.route('/prontuario')
+@app.route('/prontuario', methods=['POST'])
 def prontuario():
     return '<h1>Prontuário</h1>'
 
-@app.route('/remarcar_medico')
+@app.route('/remarcar_medico', methods=['POST'])
 def remarcar_medico():
     return '<h1>Remarcar Consulta</h1>'
 
-@app.route('/login_assistente')
+@app.route('/login_assistente', methods=['POST'])
 def login_assistente():
     return '<h1>Autenticação</h1>'
 
-@app.route('/assistente')
+@app.route('/assistente', methods=['POST'])
 def assistente():
     return '<h1>Página Inicial</h1>'
 
-@app.route('/agenda_assistente')
+@app.route('/agenda_assistente', methods=['POST'])
 def agenda_assistente():
     return '<h1>Agenda</h1>'
 
-@app.route('/marcar_exame_assistente')
+@app.route('/marcar_exame_assistente', methods=['POST'])
 def marcar_exame_assistente():
     return '<h1>Remarcar Exame</h1>'
 
-@app.route('/paciente')
+@app.route('/paciente', methods=['POST'])
 def paciente():
     return '<h1>Página Inicial</h1>'
 
-@app.route('/medico')
+@app.route('/medico', methods=['POST'])
 def medico():
     return '<h1>Página Inicial</h1>'
