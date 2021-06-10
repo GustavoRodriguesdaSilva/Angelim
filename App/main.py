@@ -1,5 +1,4 @@
 from App import app
-
 @app.route('/')
 def index():
     return '<h1>Início</h1>'
@@ -83,6 +82,3 @@ def paciente():
 @app.route('/medico')
 def medico():
     return '<h1>Página Inicial</h1>'
-#
-# if __name__ == "__main__":
-#     app.run()
