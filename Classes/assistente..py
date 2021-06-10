@@ -1,5 +1,4 @@
-from pessoa import *
-
+from Classes.pessoa import *
 
 class Assistente(Pessoa):
     def __init__(self, agenda):
