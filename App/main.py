@@ -1,10 +1,8 @@
 from flask import render_template
 from App import app
 
-@app.route("/")
-
-@app.route("/index")
-def home():
+@app.route('/')
+def index():
     return render_template('index.html')
 
 @app.route('/login_paciente')
@@ -29,7 +27,7 @@ def paciente():
 
 @app.route('/home')
 def home():
-    return render_template('index.html')
+    return '<h1>Angelim</h1>'
 
 @app.route('/login_medico')
 def login_medico():
