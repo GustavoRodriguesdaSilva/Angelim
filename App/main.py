@@ -1,6 +1,12 @@
 from flask import render_template
 from App import app
 
+@app.route("/")
+
+@app.route("/index")
+def home():
+    return render_template('index.html')
+
 @app.route('/login_paciente')
 def login_paciente():
     return render_template('login.html')
@@ -20,10 +26,6 @@ def agenda_paciente():
 @app.route('/paciente', methods=['POST'])
 def paciente():
     return '<h1>Página Inicial</h1>'
-
-@app.route('/')
-def index():
-    return render_template('index.html')
 
 @app.route('/home')
 def home():
