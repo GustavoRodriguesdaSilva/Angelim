@@ -1,0 +1,22 @@
+{% extends "templs/formTemplate.html" %}
+
+{% block title%} Autenticação de Usuários {% endblock %}
+
+{% block formulario %}
+    <form method="POST" action="autentica">
+        <div class="container-fluid">
+            <div class="row align-items-start">
+                <label class="form-label" for="usuario">Usuário:</label>
+                <input class="form-control" type="text" id="usuario" name="usuario" placeholder="Digite o nome de usuário.">
+            </div>
+        </div>
+        <div>
+            <div class="row align-items-start">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite a sua senha.">
+            </div>
+        </div>
+        <input type="submit" name="enviar" value="Autenticar" class="btn btn-outline-primary">
+        <input type="reset" name="limpar" value="Limpar" class="btn btn-outline-primary">
+    </form>
+{% endblock %}
