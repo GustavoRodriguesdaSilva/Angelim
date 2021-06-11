@@ -1,7 +1,6 @@
 from pessoa import Pessoa
 from consultas import Consultas
 
-
 class Paciente(Pessoa):
     def __init__(self, convenio, observacoes, nome, CPF, data_nascimente, genero, endereco):
         super().__init__(nome, CPF, data_nascimente, genero, endereco)
