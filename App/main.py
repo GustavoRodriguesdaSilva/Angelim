@@ -23,11 +23,11 @@ def paciente():
 
 @app.route('/')
 def index():
-    return '<h1>Início</h1>'
+    return render_template('index.html')
 
 @app.route('/home')
 def home():
-    return '<h1>Angelim</h1>'
+    return render_template('index.html')
 
 @app.route('/login_medico')
 def login_medico():
