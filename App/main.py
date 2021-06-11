@@ -1,4 +1,26 @@
+from flask import render_template
 from App import app
+
+@app.route('/login_paciente', methods=['POST'])
+def login_paciente():
+    return render_template('login.html')
+
+@app.route('/cadastro_paciente', methods=['POST'])
+def cadastro_paciente():
+    return '<h1>Cadastro</h1>'
+
+@app.route('/pagamento_paciente', methods=['POST'])
+def pagamento_paciente():
+    return '<h1>Pagamento</h1>'
+
+@app.route('/agenda_paciente', methods=['POST'])
+def agenda_paciente():
+    return '<h1>Agenda</h1>'
+
+@app.route('/paciente', methods=['POST'])
+def paciente():
+    return '<h1>Página Inicial</h1>'
+
 @app.route('/')
 def index():
     return '<h1>Início</h1>'
@@ -9,11 +31,7 @@ def home():
 
 @app.route('/login_medico', methods=['POST'])
 def login_medico():
-    return '<h1>Autenticação</h1>'
-
-@app.route('/login_paciente', methods=['POST'])
-def login_paciente():
-    return '<h1>Autenticação</h1>'
+    return render_template('login.html')
 
 @app.route('/cadastro', methods=['POST'])
 def cadastro():
@@ -23,24 +41,12 @@ def cadastro():
 def cadastro_medico():
     return '<h1>Cadastro</h1>'
 
-@app.route('/cadastro_paciente', methods=['POST'])
-def cadastro_paciente():
-    return '<h1>Cadastro</h1>'
-
-@app.route('/pagamento_paciente', methods=['POST'])
-def pagamento_paciente():
-    return '<h1>Pagamento</h1>'
-
 @app.route('/pagamento_medico', methods=['POST'])
 def pagamento_medico():
     return '<h1>Pagamento</h1>'
 
 @app.route('/agenda_medico', methods=['POST'])
 def agenda_medico():
-    return '<h1>Agenda</h1>'
-
-@app.route('/agenda_paciente', methods=['POST'])
-def agenda_paciente():
     return '<h1>Agenda</h1>'
 
 @app.route('/historico', methods=['POST'])
@@ -61,7 +67,7 @@ def remarcar_medico():
 
 @app.route('/login_assistente', methods=['POST'])
 def login_assistente():
-    return '<h1>Autenticação</h1>'
+    return render_template('login.html')
 
 @app.route('/assistente', methods=['POST'])
 def assistente():
@@ -74,10 +80,6 @@ def agenda_assistente():
 @app.route('/marcar_exame_assistente', methods=['POST'])
 def marcar_exame_assistente():
     return '<h1>Remarcar Exame</h1>'
-
-@app.route('/paciente', methods=['POST'])
-def paciente():
-    return '<h1>Página Inicial</h1>'
 
 @app.route('/medico', methods=['POST'])
 def medico():
