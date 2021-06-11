@@ -1,11 +1,11 @@
 from flask import render_template
 from App import app
 
-@app.route('/login_paciente', methods=['POST'])
+@app.route('/login_paciente')
 def login_paciente():
     return render_template('login.html')
 
-@app.route('/cadastro_paciente', methods=['POST'])
+@app.route('/cadastro_paciente')
 def cadastro_paciente():
     return '<h1>Cadastro</h1>'
 
@@ -25,19 +25,19 @@ def paciente():
 def index():
     return '<h1>Início</h1>'
 
-@app.route('/home', methods=['POST'])
+@app.route('/home')
 def home():
     return '<h1>Angelim</h1>'
 
-@app.route('/login_medico', methods=['POST'])
+@app.route('/login_medico')
 def login_medico():
     return render_template('login.html')
 
-@app.route('/cadastro', methods=['POST'])
+@app.route('/cadastro')
 def cadastro():
     return '<h1>Cadastro</h1>'
 
-@app.route('/cadastro_medico', methods=['POST'])
+@app.route('/cadastro_medico')
 def cadastro_medico():
     return '<h1>Cadastro</h1>'
 
@@ -65,7 +65,7 @@ def prontuario():
 def remarcar_medico():
     return '<h1>Remarcar Consulta</h1>'
 
-@app.route('/login_assistente', methods=['POST'])
+@app.route('/login_assistente')
 def login_assistente():
     return render_template('login.html')
 
